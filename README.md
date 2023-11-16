@@ -68,22 +68,3 @@ This web application is a car rental service built using Spring Boot and Postgre
 ### Rent Car
 - **POST** `/user/rent?endDate=YYYY-MM-DD&customerId=1&carId=1`
 
-## Installation
-
-Provide instructions on how to install and set up the application.
-
-## Usage
-
-Explain how users can use the application and any prerequisites.
-
-## Endpoints
-
-Include a table or list summarizing all endpoints and their functionalities.
-
-## Contributing
-
-Provide guidelines for contributors and how they can get involved.
-
-## License
-
-This project is licensed under the [Your License Name] - see the [LICENSE.md](LICENSE.md) file for details.
