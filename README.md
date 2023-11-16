@@ -8,8 +8,6 @@ This web application is a car rental service built using Spring Boot and Postgre
 - [Installation](#installation)
 - [Usage](#usage)
 - [Endpoints](#endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Admin Operations
 
