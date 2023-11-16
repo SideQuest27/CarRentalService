@@ -11,6 +11,15 @@ This web application is a car rental service built using Spring Boot and Postgre
 ### Add Car
 - **POST** `/admin`
   - *Expects car JSON body*
+  - {
+  "brand": "BENTLEY",
+  "model": "ContinentalGt",
+  "year": 2023,
+  "registrationPlate": "BDY-69",
+  "available": true,
+  "chargePerDay": 2000
+}
+
 
 ### Update Car
 - **PUT** `/admin/update/{id}`
@@ -41,6 +50,13 @@ This web application is a car rental service built using Spring Boot and Postgre
 ### User Signup
 - **POST** `/user/signup`
   - *Expects customer JSON body*
+  - {
+  "firstName": "Joe",
+  "lastName": "Schmo",
+  "email": "JoeSchmo@gmail.com",
+  "phoneNumber": 12345678
+}
+
 
 ### Delete User
 - **DELETE** `/admin/user/delete/{id}`
