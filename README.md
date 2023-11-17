@@ -57,6 +57,14 @@ This web application is a car rental service built using Spring Boot and Postgre
   "phoneNumber": 12345678
 }
 
+### Get User Invoice by User ID
+- **GET** `/user/invoice/{userId}`
+
+### Pay Invoice
+- **PUT** `/user/pay?id=123&amount=50`
+
+### Rent Car
+- **POST** `/user/rent?endDate=YYYY-MM-DD&customerId=1&carId=1`
 
 ### Delete User
 - **DELETE** `/admin/user/delete/{id}`
@@ -70,12 +78,5 @@ This web application is a car rental service built using Spring Boot and Postgre
 ### Get All Outdated Invoices
 - **GET** `/admin/invoice/outdated`
 
-### Get User Invoice by User ID
-- **GET** `/user/invoice/{userId}`
 
-### Pay Invoice
-- **PUT** `/user/pay?id=123&amount=50`
-
-### Rent Car
-- **POST** `/user/rent?endDate=YYYY-MM-DD&customerId=1&carId=1`
 
