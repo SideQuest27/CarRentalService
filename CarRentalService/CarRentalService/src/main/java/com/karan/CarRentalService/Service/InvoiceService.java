@@ -38,7 +38,7 @@ public class InvoiceService
     public String payInvoice(Long id, Integer amount)
     {
         String s="TRANSACTION FAILED PLEASE CHECK ID/AMOUNT";
-        if (invoiceRepository.checkingAmount(amount).isPresent()&&invoiceRepository.findById(id).isPresent())
+        if (invoiceRepository.findById(id).orElseThrow(()-> new TransactionFailedException()).getAmountDue().equals(amount)&&invoiceRepository.findById(id).orElseThrow(()-> new TransactionFailedException()).getPaid().equals(false))
         {
             invoiceRepository.payInvoice(id,amount);
             carRepository.carReturned(invoiceRepository.findById(id).get().getRental().getCar().getCarId());
