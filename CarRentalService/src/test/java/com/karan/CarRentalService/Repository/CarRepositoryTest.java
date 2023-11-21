@@ -57,7 +57,6 @@ class CarRepositoryTest {
        List<Car> car =carRepository.findCarsByBudget(600);
        assertEquals(car.get(0),carRepository.findById(1L).get());
     }
-
     @SneakyThrows
     @Transactional
     @Test
@@ -74,7 +73,5 @@ class CarRepositoryTest {
         carRepository.carTaken(1L);
         carRepository.carReturned(1L);
         assertEquals(carRepository.findById(1L).get().getAvailable(),true);
-
-
     }
 }
