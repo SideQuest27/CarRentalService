@@ -18,7 +18,7 @@ public interface InvoiceRepository extends JpaRepository<Invoice,Long>
     @Query("SELECT i FROM Invoice i WHERE i.paid =true")
     public List<Invoice> showAllOutDatedInvoices();
 
-    @Modifying(clearAutomatically = true)
+    @Modifying
     @Query("UPDATE Invoice i SET i.paid = true WHERE i.amountDue =?2 AND i.invoiceId =?1")
     public void payInvoice(Long id, Integer amount);
 

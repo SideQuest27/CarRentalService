@@ -17,11 +17,11 @@ public interface CarRepository extends JpaRepository<Car,Long>
     @Query(value = "SELECT c FROM Car c WHERE c.chargePerDay <= ?1")
     List<Car> findCarsByBudget(Integer budget);
 
-    @Modifying(clearAutomatically = true)
+    @Modifying
     @Query("UPDATE Car c SET c.available = false WHERE c.carId = ?1")
     void carTaken(Long id);
 
-    @Modifying(clearAutomatically = true)
+    @Modifying
     @Query("UPDATE Car c SET c.available = true WHERE c.carId = ?1")
     void carReturned(Long id);
 }

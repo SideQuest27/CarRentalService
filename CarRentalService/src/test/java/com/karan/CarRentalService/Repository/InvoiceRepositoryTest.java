@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class InvoiceRepositoryTest
 {
-
+    //While testing make all the @Modifying in repository -> @Modifying(clearAutomatically=true)
     @Autowired
     InvoiceRepository invoiceRepository;
     @Autowired
