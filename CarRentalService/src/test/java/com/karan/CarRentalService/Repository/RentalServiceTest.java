@@ -7,5 +7,5 @@ import static org.junit.jupiter.api.Assertions.*;
 @DataJpaTest
 class RentalServiceTest
 {
-
+    //While testing make all the @Modifying in repository -> @Modifying(clearAutomatically=true)
 }

@@ -19,7 +19,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-class CarRepositoryTest {
+class CarRepositoryTest
+{
+
     @Autowired
     private CarRepository carRepository;
 
