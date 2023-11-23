@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class CarRepositoryTest
 {
-
+     //While testing make all the @Modifying in repository -> @Modifying(clearAutomatically=true)
     @Autowired
     private CarRepository carRepository;
 
